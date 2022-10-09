@@ -33,7 +33,7 @@ export const QualitiesProvider = ({ children }) => {
         }
     }, [error]);
 
-    const getQualities = (id) => {
+    const getQuality = (id) => {
         return qualities.find(quality => quality._id === id);
     };
     const errCatcher = (err) => {
@@ -41,7 +41,7 @@ export const QualitiesProvider = ({ children }) => {
         setError(message);
     };
 
-    return <QualitiesContext.Provider value={{ isLoading, getQualities }}>
+    return <QualitiesContext.Provider value={{ isLoading, getQuality }}>
         {children}
     </QualitiesContext.Provider>;
 };
