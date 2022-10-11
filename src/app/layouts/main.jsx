@@ -4,7 +4,7 @@ import useMocData from '../utils/mocData';
 const Main = () => {
     const { error, initialise, progress, status } = useMocData();
     const handleClick = () => {
-        initialise();
+         initialise();
     };
     return (
      <div className='container mt-5'>
